@@ -9,6 +9,9 @@ class Application
       item = @@items.find{|i| i.name == ite_name}
     end
  
+ 
+ 
+ 
     resp.finish
   end
 
