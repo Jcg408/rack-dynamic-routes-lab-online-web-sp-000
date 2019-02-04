@@ -4,7 +4,7 @@ class Application
     req = Rack::Request.new(env)
  
     if req.path=="/items/"
-      item = req.path.split("/items/").last
+      item_name = req.path.split("/items/").last
       
       
       
