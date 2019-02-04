@@ -5,9 +5,9 @@ class Application
  
     if req.path=="/items/"
       item_name = req.path.split("/items/").last
-      binding.pry
       
-     end
+      
+    end
  
     resp.finish
   end
