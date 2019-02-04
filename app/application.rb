@@ -6,13 +6,7 @@ class Application
     if req.path=="/items/"
       item_name = req.path.split("/items/").last
       
-      
-      
-      resp.write "You requested the item"
-    else
-      resp.write "Route not found"
-      resp.status = 404
-    end
+      if item.name
  
     resp.finish
   end
