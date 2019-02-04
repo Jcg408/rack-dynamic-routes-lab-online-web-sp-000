@@ -6,11 +6,15 @@ class Application
     if req.path=="/items/"
       item_name = req.path.split("/items/").last
       
-      item = @@items.find{|i| i.name == ite_name}
-      
-      
-      
-    end
+      item = @@items.find{|i| i.name == item_name}
+        if item
+          resp.write "#{item.price}"
+        else
+          resp.write "Item not found"
+          resp.status = 404
+        end
+        
+        
  
  
  
